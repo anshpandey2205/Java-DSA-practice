@@ -8,39 +8,39 @@ public class Add_first_last {
             this.next=null;
         }
     }
-    public static node head;
-    public static node tail;
+    public static node first;
+    public static node temp;
 
     public void addFirst(int data){
         // STEP 1 = CREATE NEW NODE
         node newNode=new node(data);
-        if(head==null){
-            head=tail=newNode;
+        if(first==null){
+            first=temp=newNode;
             return;
         }
 
         // STEP 2 = NEWNODE NEXT= TEMP
-        newNode.next=head;
+        newNode.next=first;
 
         // STEP 3 = HEAD = NEWNODE
-        head=newNode;
+        first=newNode;
     }
 
     public void addLast(int data){
         node newNode=new node(data);
-        if(head==null){
-            head=tail=newNode;
+        if(first==null){
+            first=temp=newNode;
             return;
         }
-        tail.next=newNode;
-        tail=newNode;
+        temp.next=newNode;
+        temp=newNode;
     }
 
     public void print(){
-        node temp=head;
-        while(temp!=null){
-            System.out.println(temp.data);
-            temp=temp.next;
+        node ttemp=first;
+        while(ttemp!=null){
+            System.out.println(ttemp.data);
+            ttemp=ttemp.next;
         }
         //System.out.println();
     }
