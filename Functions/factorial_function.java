@@ -1,4 +1,4 @@
-import java.util.*;
+// import java.util.*;
 public class factorial_function {
     public static int factorial(int n){
         int f=1;
