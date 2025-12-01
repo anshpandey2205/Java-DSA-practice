@@ -9,6 +9,7 @@ public class decreaseOrder {
         decreasenumber(n-1);
     }
     public static void main(String[] args) {
+        System.out.println("Decreasing order:");
         decreasenumber(10);
     }
 }
