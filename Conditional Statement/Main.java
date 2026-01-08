@@ -17,7 +17,7 @@ public class Main {
         int b = sc.nextInt();
         if(a>b){
             System.out.println("A is greater");
-        }
+        }else
         if(a==b){
             System.out.println("Equal");
         }
